@@ -26,8 +26,8 @@ public:
     GraphWindow *graph1292r = nullptr;
 
 public slots:
-    void parseBtConnectionState(bool state, QString deviceName);
-    void parseSerialConnectionState(bool state, QString portName);
+    void parseBtConnectionState(bool state, const QString &deviceName);
+    void parseSerialConnectionState(bool state, const QString &portName);
 
 private slots:
     void on_btnInitSerial_clicked();

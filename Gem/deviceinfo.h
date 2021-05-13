@@ -11,7 +11,7 @@ class DeviceInfo : public QObject {
     Q_PROPERTY(QString deviceAddress READ getAddress NOTIFY deviceChanged)
 
 public:
-    DeviceInfo(const QBluetoothDeviceInfo &device);
+    explicit DeviceInfo(const QBluetoothDeviceInfo &device);
 
     void setDevice(const QBluetoothDeviceInfo &device);
     QString getName() const;

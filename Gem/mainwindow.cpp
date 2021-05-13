@@ -44,7 +44,7 @@ MainWindow::~MainWindow() {
     qDebug() << "~MainWindow();";
 }
 
-void MainWindow::parseBtConnectionState(bool state, QString deviceName) {
+void MainWindow::parseBtConnectionState(bool state, const QString &deviceName) {
     if (state) {
         ui->btnStartBt->setEnabled(true);
         ui->labelBt->setText("Connected to: " + deviceName);
@@ -55,7 +55,7 @@ void MainWindow::parseBtConnectionState(bool state, QString deviceName) {
     }
 }
 
-void MainWindow::parseSerialConnectionState(bool state, QString portName) {
+void MainWindow::parseSerialConnectionState(bool state, const QString &portName) {
     if (state) {
         ui->btnStartSerial->setEnabled(true);
         ui->labelSerial->setText("Connected to: " + portName);

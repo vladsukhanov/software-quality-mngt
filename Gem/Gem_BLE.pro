@@ -1,4 +1,8 @@
-QT       += core gui serialport bluetooth
+QT += core gui serialport bluetooth
+
+QT += testlib
+CONFIG += qt warn_on depend_includepath testcase
+TEMPLATE = app
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
@@ -16,6 +20,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Tests/tst_checktest.cpp \
     btclient.cpp \
     butterworthfilter.cpp \
     deviceinfo.cpp \

@@ -13,7 +13,7 @@ class GraphWindow : public QDialog {
 
 public:
     explicit GraphWindow(QWidget *parent = nullptr);
-    GraphWindow(int8_t graphNumber);
+    explicit GraphWindow(int8_t graphNumber);
     ~GraphWindow();
 
 public slots:
