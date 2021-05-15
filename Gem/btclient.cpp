@@ -7,8 +7,6 @@
 
 #include "mainwindow.h"
 
-#define LE_TIMER 5000
-
 BtClient::BtClient(QWidget *parent) : QDialog(parent), ui(new Ui::BtClient) {
     ui->setupUi(this);
 

@@ -22,6 +22,8 @@
 
 namespace Ui { class BtClient; }
 
+#define LE_TIMER 5000
+
 class BtClient : public QDialog {
     Q_OBJECT
 
@@ -32,6 +34,8 @@ public:
     bool connectedState = false;
 
     void discoveryBtDevice();
+
+    friend class TestGuiBc;
 
 signals:
     void connectionStatusChanged(bool state, QString deviceName);

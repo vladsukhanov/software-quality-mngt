@@ -19,6 +19,8 @@ public:
 
     bool connectedState = false;
 
+    friend class TestGuiSc;
+
 signals:
     void dataAvailable(QByteArray data);
     void connectionStatusChanged(bool state, QString portName);
