@@ -1,14 +1,6 @@
 #include "graphwindow.h"
 #include "ui_graphwindow.h"
 
-#include "butterworthfilter.h"
-
-// Классы фильтров
-ButterworthFilter filter1;
-ButterworthFilter filter2;
-ButterworthFilter filter3;
-ButterworthFilter filter4;
-
 GraphWindow::GraphWindow(QWidget *parent) : QDialog(parent), ui(new Ui::GraphWindow) {
     ui->setupUi(this);
 
@@ -208,11 +200,8 @@ void GraphWindow::realtimeDataSlot() {
     //    ui->customPlot->graph(1)->rescaleKeyAxis(true);
 }
 
-void GraphWindow::filterAds1256Data() {
-    local_filteredAds1256Data1 = filter1.filter(local_ads1256Data1);
-    local_filteredAds1256Data2 = filter2.filter(local_ads1256Data2);
-    local_filteredAds1256Data3 = filter3.filter(local_ads1256Data3);
-    local_filteredAds1256Data4 = filter4.filter(local_ads1256Data4);
+double GraphWindow::filterAds1256Data(double data) {
+    return filter.filter(data);
 }
 
 void GraphWindow::getDataAvailable(QByteArray data) {
@@ -225,22 +214,22 @@ void GraphWindow::getDataAvailable(QByteArray data) {
 //    data.chop(2); // удаление \r\n
 
     switch (channelNumber) {
-        // ADS1256
+      // ADS1256
       case 1:
         local_ads1256Data1 = data.toDouble();
-        filterAds1256Data();
+        local_filteredAds1256Data1 = filterAds1256Data(local_ads1256Data1);
         break;
       case 2:
         local_ads1256Data2 = data.toDouble();
-        filterAds1256Data();
+        local_filteredAds1256Data2 = filterAds1256Data(local_ads1256Data2);
         break;
       case 3:
         local_ads1256Data3 = data.toDouble();
-        filterAds1256Data();
+        local_filteredAds1256Data3 = filterAds1256Data(local_ads1256Data3);
         break;
       case 4:
         local_ads1256Data4 = data.toDouble();
-        filterAds1256Data();
+        local_filteredAds1256Data4 = filterAds1256Data(local_ads1256Data4);
         break;
         // ADS1292R
       case 5:

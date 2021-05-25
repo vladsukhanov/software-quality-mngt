@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.14.2, 2021-05-15T20:40:31. -->
+<!-- Written by QtCreator 4.14.2, 2021-05-24T21:28:53. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -64,24 +64,7 @@
     <value type="bool" key="AutoTest.Framework.QtQuickTest">true</value>
     <value type="bool" key="AutoTest.Framework.QtTest">true</value>
    </valuemap>
-   <valuemap type="QVariantMap" key="AutoTest.CheckStates">
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/testGuiBc.cpp:TestGuiBc">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/testGuiBc.cpp:cleanupTestCase">Unchecked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/testGuiBc.cpp:initTestCase">Unchecked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/testGuiBc.cpp:test_bc_btns">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/testGuiBc.cpp:test_bc_grid">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/testGuiBc.cpp:test_bc_labels">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/testGuiBc.cpp:test_btnScan">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/testGuiBc.cpp:test_btn_clicks">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/tst_checktest.cpp:CheckTest">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/tst_checktest.cpp:cleanupTestCase">Unchecked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/tst_checktest.cpp:initTestCase">Unchecked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/tst_checktest.cpp:test_ble_local_device">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/tst_checktest.cpp:test_butterworth">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/tst_checktest.cpp:test_deviceInfo">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/tst_checktest.cpp:test_poles_and_zeros">Checked</value>
-    <value type="Qt::CheckState" key="C:/Users/vlads/Desktop/software-quality-mngt/Gem/Tests/tst_checktest.cpp:test_timer">Checked</value>
-   </valuemap>
+   <valuemap type="QVariantMap" key="AutoTest.CheckStates"/>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>
    <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey">

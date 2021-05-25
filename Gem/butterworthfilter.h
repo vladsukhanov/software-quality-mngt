@@ -17,7 +17,6 @@ public:
 private:
     // Переменные для функции filter()
     double _xv[NZEROS+1] = {}, _yv[NPOLES+1] = {};
-    double _channelData = 0;
 };
 
 #endif // BUTTERWORTHFILTER_H

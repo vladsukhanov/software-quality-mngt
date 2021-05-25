@@ -5,6 +5,7 @@
 #include <QTimer>
 
 #include "qcustomplot.h"
+#include "butterworthfilter.h"
 
 namespace Ui { class GraphWindow; }
 
@@ -23,7 +24,7 @@ private slots:
     // Функция для RealTimePlot
     void realtimeDataSlot();
 
-    void filterAds1256Data();
+    double filterAds1256Data(double data);
 
     void on_btnCancel_clicked();
     void on_btnFull_clicked();
@@ -44,6 +45,8 @@ private:
 
     // Вид графика: 1 - P(t); 2 - deltaP(t); 3 - deltaP(P);
     int8_t _graphNumber;
+
+    ButterworthFilter filter;
 
     double local_ads1256Data1, local_ads1256Data2, local_ads1256Data3, local_ads1256Data4;
     double local_ads1292rData1, local_ads1292rData2, local_ads1292rData3, local_ads1292rData4;

@@ -1,8 +1,8 @@
 QT += core gui serialport bluetooth
 
-QT += testlib
-CONFIG += qt warn_on depend_includepath testcase
-TEMPLATE = app
+#QT += testlib
+#CONFIG += qt warn_on depend_includepath testcase
+#TEMPLATE = app
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
